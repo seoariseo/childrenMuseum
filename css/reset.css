@@ -1,0 +1,18 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'TTHakgyoansimUndongjangL';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimUndongjangL.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+a{text-decoration: none; color: inherit; display: block;}
+ul,li{list-style: none;}
+html,body{height: 100%;}
+html{font-size: 10px;}
+body{font-family: 'TTHakgyoansimUndongjangL'; color: #333;}
+.flex_b{display: flex; justify-content: space-between;}
+.flex_a{display: flex; justify-content: space-around;}
+.flex_c{display: flex; justify-content: center;}
+
+
+/*  border: 1px solid red; */
