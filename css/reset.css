@@ -14,5 +14,10 @@ body{font-family: 'TTHakgyoansimUndongjangL'; color: #333;}
 .flex_a{display: flex; justify-content: space-around;}
 .flex_c{display: flex; justify-content: center;}
 
+:root{
+    --orange : #f79d00;  --blue : #0072ff;
+    --main01 : #e6f3fe;  --pink : #ff5363;
+    --yellow : #ffd02c;  --brown : #d7c072;
+}
 
 /*  border: 1px solid red; */

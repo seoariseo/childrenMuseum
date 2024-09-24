@@ -2,15 +2,13 @@
 
 /* header 영역 */
 .header {
-    max-width: 1500px;
-    height: 150px;
+    max-width: 1500px;  width: 90%; height: 150px;
     background-color: #fff;
     border-radius: 0 0 50px 50px;
     box-shadow: 0 2px 5px #d1d1d1;
-    transition: all 0.3s ease-in-out;
-    position: absolute;
-    top: 0; left: 50%; transform: translateX(-50%); 
-    width: 100%; z-index: 100;
+    transition: all 0.1s ease-in-out;
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%); 
+    z-index: 100;
 }
 .header.act{height: 360px;}
 
@@ -24,9 +22,9 @@
 .logo {width: 20%;}
 .logo a img {width: 150px;}
 
-.h_top_nav{width: 40%; /* border: 1px solid red; */}
+.h_top_nav{width: 45%; /* border: 1px solid red; */}
 
-.h_top_menu {width: 100%; align-items: center;}
+.h_top_menu {width: 100%; align-items: center; padding: 0 30px;}
 .h_top_menu li {}
 .h_top_menu li a {font-size: 1.4rem;}
 .h_top_menu li a:hover{text-decoration: underline;}
@@ -79,8 +77,10 @@
 .sub_museum li {line-height: 2;}
 .sub_museum li a:hover {text-decoration: underline; color: #f79d00;}
 
-
 .search a img {width: 2.5rem;}
+
+.menu_bar i{font-size: 2.4rem;}
+
 /* head_top END */
 
 
@@ -153,23 +153,66 @@ padding: 10px; line-height: 80px; color: #fff; border-radius: 0 20px 20px 0;}
 
 
 /* main01 영역 */
-.main01{background-color: #e6f3fe;width: 100%;height: 100%; background-image: url(../img/cloud.png); background-repeat: no-repeat; background-position: center 150px; position: relative;}
+.main01{background-color: #e6f3fe; width: 100%; height: 100%; position: relative;/* sun,,mole01 relative */
+    background-image: url(../img/cloud.png); background-repeat: no-repeat; 
+    background-position: center 150px;}
 
-.mole01{width: 15%; height: 40%; background: url(../img/mole01.png) no-repeat; background-size: contain; position: absolute; top: 45%; right: 10%;  z-index: 100;}
+.main_Txt{text-align: center; padding-top: 320px;}
+.main_Txt p{font-size: 3vw; margin-bottom: 10px; color: #0072ff;}
+.main_Txt span{display: block; font-size: 1.7vw;}
 
-.bg_hill{background:url(../img/bg_hill.png)  no-repeat; background-size:100% 80%; 
-    width: 100%; height: 100%; position: absolute; top: 60%; left: 0; z-index: 10;}
-    
-    .main_Txt{text-align: center; padding-top: 320px;}
-    .main_Txt p{font-size: 6rem; margin-bottom: 10px; color: #0072ff;}
-    .main_Txt span{display: block; font-size: 3.4rem;}
-    
-    .sun_img{background: url(../img/sun.png) center center no-repeat; background-size: contain; 
-                width: 25%; height: 35%; transition: all 1s ease-in-out ;  animation: sunMoving 5s infinite ease-in; position: absolute; top: 60%; left: 8%;}
-    @keyframes sunMoving {
-            0%{top: 60%; }
-            50%{top: 45%;}
-            100%{top: 60%;}
-        }
+.sun{background: url(../img/sun.png) no-repeat center center; background-size: cover; 
+    width: 400px; height: 400px; position: absolute; top: 500px; left: 240px; animation: sun_move 5s infinite ;}
+@keyframes sun_move {
+    0%{top: 450px;}
+    50%{top: 550px;}
+    100%{top: 450px;}
+}
 
+.mole01{background: url(../img/mole01.png) no-repeat center center / contain;
+    width: 300px; height: 400px; position: absolute; top: 480px; right: 200px; z-index: 10;}
+.hill{background: url(../img/bg_hill_03.png) no-repeat center center / cover; 
+    width: 100%; height: 584px;position: absolute; top: 700px; left: 0;}
     
+
+/* 예약창 영역 */
+.reservation{max-width: 1500px;  width: 90%; height: 365px;   position: absolute; z-index: 10;
+    top: 95%; left: 50%; transform: translateX(-50%); overflow: hidden;}
+
+/* 관람예약 영역*/
+.view_content{font-size: 1.8rem; width: 100%; height: 100%; }
+.view_content h3{position: relative; width: 280px; height: 180px;
+    text-align: center; line-height: 180px; border-radius: 50px 0 0 0; background-color: #f79d00;}
+
+    /* 예약 리스트 */
+.view_box{position: absolute;top: 0; left: 280px; z-index: 20; max-width: 1500px; width: 100%; height: 365px; text-align: center;
+    padding: 0 30px; align-items: center; background-color: #f79d00; border-radius: 0 50px 50px 0; }
+.view_box h2{width: 200px; height: 180px; text-align: center; line-height: 1.2; font-weight: 500; padding: 30px 0;border: 1px solid blue;}
+.view_box h2 span{font-size: 1.4rem; display: block; line-height: 2; width:150px; margin: 0 auto; border-top: 1px solid black; margin-top: 10px; padding: 10px 0;}
+    
+.view_reserve{width: 85%; border: 1px solid black;}
+.view_reserve li{width: 280px; height: 280px; background-color: var(--yellow); margin: 0 10px; 
+    text-align: center; padding: 25px;  line-height: 30px; border-radius: 50px;}
+.view_reserve li span{}
+.view_reserve li > p{font-size: 1.4rem; /* border: 1px solid red; */}
+
+.view_reserve li > div {margin-top: 30px; width: 230px; height: 140px; border-radius: 30px;}
+
+.viewBox_end{ line-height: 140px; background-color: var(--brown); background-image: url(../img/end_bg.png);}
+.viewBox_end p{}
+
+.viewRE_ok{padding-top: 25px; background-color: #f79d00;}
+.viewRE_ok p{}
+.viewRE_ok span{font-size: 1.5rem;}
+.viewRE_ok a{font-size: 1.2rem;}
+
+.education_content{}
+
+
+/* 예약창 영역 END */
+
+
+/* .main02 영역 */
+.main02{width: 1500px; height: 365px;  border: 1px solid red;}
+.main02_bg{background: url(../img/face.png) center center repeat-x;background-size: contain; width: 100%; height: 100%;}
+

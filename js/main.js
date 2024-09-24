@@ -40,8 +40,10 @@ $(function () {
     }) //$(".close_btn").click
 
 
+    $(".view_reserve").slick({
+        autopaly :true,
+        
 
-
-
-
+    })
 }) //jquery
+
