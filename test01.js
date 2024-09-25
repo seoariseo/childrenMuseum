@@ -1,26 +1,25 @@
 $(function(){
-
-    $(".reserve_list").slick({
+    
+    $(".sub").slick({
         autoplay :false,
         arrows:true,
         dots: false,
         slidesToShow: 3,
-        infinite: false  
+        infinite: false
     })//slick
 
-    $(".titName li").click(function(){
-        $(".titName li").removeClass("on");
+
+    $(".btn li").click(function(){
+        $(".btn li").removeClass("on");
         $(this).addClass("on");
         var n = $(this).index();
         // $(".res_group > div").removeClass("on");
         // $(".res_group > div").eq(n).addClass("on")
 
-        $(".res_group > div").hide();
-        $(".res_group > div").eq(n).show();
+        $(".reserve_box").hide();
+        $(".reserve_box").eq(n).show();
 
 
     })//click
 
-
-
-})//
+})

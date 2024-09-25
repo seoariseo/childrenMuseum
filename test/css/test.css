@@ -22,8 +22,8 @@ body{font-family: 'TTHakgyoansimUndongjangL'; color: #333;}
 
 /*  border: 1px solid red; */
 /* 예약창 영역 */
-.reservation{max-width: 1160px;  width: 100%; height: 250px;   position: absolute; z-index: 10;
-    top: 10%; left: 50%; transform: translateX(-50%); border-radius: 40px;  box-shadow: 8px 8px 5px #d1d1d168;}
+.reservation{max-width: 1200px;  width: 90%; height: 250px;   position: absolute; z-index: 10;
+    top: 10%; left: 50%; transform: translateX(-50%);}
 
 /* 예약버튼 */
 .titName{width: 200px; height: 250px; background:var(--orange); font-size: 2rem;
@@ -32,16 +32,9 @@ body{font-family: 'TTHakgyoansimUndongjangL'; color: #333;}
 .titName li:first-child{border-radius: 40px 0 40px 0;}
 .titName li:last-child{border-radius: 0 40px 0 40px;} 
 
-
-/* 예약창 ON 클래스 */
 .titName li.on{background-color: transparent;}
 /* END */
 
-/* 관람예약 영역*/
-.view_content{font-size: 1.8rem; width: 100%; height: 100%; cursor: pointer; z-index: 100;}
-
-/* 교육예약 영역 */
-.education_content{ z-index: 50;}
 
 /* 예약그룹 */
 .res_group{ position: absolute; top: 0;left: 0;width:1200px;}
@@ -49,35 +42,38 @@ body{font-family: 'TTHakgyoansimUndongjangL'; color: #333;}
 .res_group > div{position: absolute; left: 0;top: 0;width: 100%;
 height: 100%;}
 
+/* 관람예약 영역*/
+.view_content{font-size: 1.8rem; width: 100%; height: 100%; cursor: pointer;}
 
-/* 예약 박스 */
-.reserve_box{position: absolute;top: 0; left: 200px; z-index: 20; width: 80%; height: 250px; 
+    /* 예약 리스트 */
+.reserve_box{position: absolute;top: 0; left: 200px; z-index: 20; max-width: 1200px; width: 80%; height: 250px; 
     align-items: center; background-color: #f79d00; border-radius: 0 40px 40px 0;}
 
-/* 예약확인 타이틀 */
+.view{}
+
 .title{width: 10%; width: 150px; height: 150px; line-height: 150px; padding: 30px 15px;
     text-align: left; margin-left: 40px;}
 .title h2{line-height: 1.2; font-weight: 500; font-size: 2.2rem;}
 .title h2 span{font-size: 1.4rem; display: block; line-height: 2; width:120px; margin: 0 auto; 
         border-top: 1px solid black; margin-top: 10px; padding: 10px 0; text-align: left;}
     
-/* 예약 리스트 */
+
 .reserve_list{width: 70%;  height: 100%; position: relative; margin-top: 70px; margin-right: 40px;}
-.reserve_list li{ background-color: var(--yellow); width: 200px; height: 180px; text-align: center;
-    line-height: 20px; border-radius: 30px; padding: 10px;}
+.reserve_list li{ background-color: var(--yellow); width: 200px; height: 180px; text-align: center;   
+    line-height: 20px; border-radius: 30px; padding: 10px 10px; border: 1px solid red;}
 .reserve_list li span{ display: block;}
 .reserve_list li > p{font-size: 1.4rem; /* border: 1px solid red; */}
 
-/* 예약창 슬릭 */
+    
+/* 관람예약창 슬릭 */
 .reserve_list .slick-slide{margin-right: 20px; }
 .reserve_list .slick-arrow{position: absolute; top: 80px; z-index: 10; width: 27px; height: 37px; cursor: pointer;
     display: block; background-color: transparent; text-indent: -9999px; border: none;}
 .reserve_list .slick-arrow.slick-prev{ left: -45px;  background: url(../img/button.png) no-repeat right ; }
 .reserve_list .slick-arrow.slick-next{ right: -30px; background: url(../img/button.png) no-repeat ;}
-    
+
 .reserve_list li > div {width: 150px; height: 100px; border-radius: 20px; margin: 10px auto; }
 
-/* 슬라이드 버튼 */
 .reserveBox_end{ line-height: 100px; background-color: var(--brown); background-image: url(../img/end_bg.png); background-size: contain ; background-position: center right; }
 .reserveBox_end p{}
 
@@ -90,9 +86,34 @@ height: 100%;}
 
 
 
+/* 교육예약 영역 */
+.education_content{font-size: 1.8rem; width: 100%; height: 100%; cursor: pointer; display: none;}
+.education_content .edu{border-radius: 0 40px 40px 0;}
 
 
+.Edu_reserve_list{width: 70%;  height: 100%; position: relative; margin-top: 70px; margin-right: 40px;}
+/* .Edu_reserve_list .slick-slide{margin-right: 20px;} */
 
+
+.Edu_reserve_list .slick-slide{ background-color: var(--yellow); width: 200px; height: 180px; text-align: center;   
+    line-height: 20px; border-radius: 30px; padding: 10px 10px; border: 1px solid red; margin-right: 20px;}
+
+/* .Edu_reserve_list li{ background-color: var(--yellow); width: 200px; height: 180px; text-align: center;   
+    line-height: 20px; border-radius: 30px; padding: 10px 10px; border: 1px solid red;} */
+
+
+.Edu_reserve_list li span{ display: block;}
+.Edu_reserve_list li > p{font-size: 1.4rem; /* border: 1px solid red; */}
+
+.Edu_reserve_list li > div {width: 150px; height: 100px; border-radius: 20px; margin: 10px auto; }
+
+
+/* 교육예약창 슬릭 */
+
+.Edu_reserve_list .slick-arrow{position: absolute; top: 80px; z-index: 10; width: 27px; height: 37px; cursor: pointer;
+    display: block; background-color: transparent; text-indent: -9999px; border: none;}
+.Edu_reserve_list .slick-arrow.slick-prev{ left: -45px;  background: url(../img/button.png) no-repeat right ; }
+.Edu_reserve_list .slick-arrow.slick-next{ right: -30px; background: url(../img/button.png) no-repeat ;}
 
 /* 예약창 영역 END */
 

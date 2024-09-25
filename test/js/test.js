@@ -5,7 +5,15 @@ $(function(){
         arrows:true,
         dots: false,
         slidesToShow: 3,
-        infinite: false  
+        infinite: false
+    })//slick
+    
+    $(".Edu_reserve_list").slick({
+        autoplay :false,
+        arrows:true,
+        dots: false,
+        slidesToShow: 3,
+        infinite: false
     })//slick
 
     $(".titName li").click(function(){
