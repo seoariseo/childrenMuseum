@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/total.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="shortcut icon" href="img/favicon.ico">
     <script src="js/jquery-3.7.1.js"></script>
-    <script src="https://kit.fontawesome.com/44c5e9073a.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-
+    <script src="js/slick.js"></script>
+    <script src="https://kit.fontawesome.com/44c5e9073a.js" crossorigin="anonymous"></script>
+    
     <title>어린이박물관</title>
 </head>
 
@@ -160,71 +162,239 @@
 
 
 
-
-    <!-- reservation 영역 -->
-    <div class="reservation">
-            <!-- 관람예약 영역 -->
-            
+<!-- reservation 영역 -->
+<div class="reservation">
+    <!-- 예약버튼 -->
+    <ul class="titName">
+        <li class="on">관람예약</li>
+        <li>교육예약</li>
+    </ul><!-- titName -->
+    
+    <div class="res_group">
+        <!-- 관람예약 영역 -->
         <div class="view_content">
-            <h3>관람예약</h3>
+            <div class="reserve_box flex_b">
 
+                <div class="title">    
+                    <h2>어린이 관람<br>
+                        예약확인
+                        <span>2024.09.23 (수)</span>
+                    </h2>
+                </div><!-- title -->
 
-            <div class="view_box flex_b">
-                <h2>개인 및 단체<br>
-                    예약확인
-                    <span>2024.09.23 (수)</span>
-                </h2>
-            
-
-            <ul class="view_reserve flex_b slider ">
-                <li class="slide">
+            <ul class="reserve_list">
+                
+                <li>
                     <span>1회차</span>
                     <p>10:00 ~ 10:30</p>
-                    <div class="viewBox_end">
+                    <div class="reserveBox_end">
                         <p>접수마감</p>
                     </div><!-- viewRE_box -->
                 </li>
-                <li class="slide">
+
+                <li>
                     <span>2회차</span>
                     <p>11:00 ~ 11:30</p>
-                    <div class="viewBox_end">
+                    <div class="reserveBox_end">
                         <p>접수마감</p>
                     </div><!-- viewRE_box -->
                 </li>
-                <li class="slide">
+
+                <li >
                     <span>3회차</span>
                     <p>12:00 ~ 12:30</p>
-                    <div class="viewRE_ok">
+                    <div class="reserveBox_ok">
                         <p>접수가능</p>
                         <span>잔여 10명</span>
                         <a href="#none">예약하러가기 ></a>
                     </div><!-- viewRE_box -->
                 </li>
-                <li class="slide">
+                
+                <li >
                     <span>4회차</span>
                     <p>13:00 ~ 13:30</p>
-                    <div class="viewBox_end">
+                    <div class="reserveBox_end">
                         <p>접수마감</p>
                     </div><!-- viewRE_box -->
                 </li>
-                <li class="slide">
+                
+                <li>
                     <span>5회차</span>
                     <p>14:00 ~ 14:30</p>
-                    <div class="viewBox_end">
+                    <div class="reserveBox_end">
                         <p>접수마감</p>
                     </div><!-- viewRE_box -->
                 </li>
-            </ul><!-- view_reserve END -->
-        </div><!-- view_box END-->
+                
+                <li>
+                    <span>6회차</span>
+                    <p>15:00 ~ 15:30</p>
+                    <div class="reserveBox_ok">
+                        <p>접수가능</p>
+                        <span>잔여 5명</span>
+                        <a href="#none">예약하러가기 ></a>
+                    </div><!-- viewRE_box -->
+                </li>
+            </ul><!-- reserve_list END -->
+
+        </div><!-- reserve_box END-->
         </div><!-- view_content END -->
 
-        <div class="education_content">
+        <!-- 교육예약 영역 -->
+        <div class="view_content education_content">
+            <div class="reserve_box flex_b view">
 
-        </div><!-- education_content -->
+                <div class="title">    
+                    <h2>어린이 교육<br>
+                        예약확인
+                        <span>2024.09.23 (수)</span>
+                    </h2>
+                </div><!-- title -->
 
-    </div><!-- reservation END -->
+            <ul class="reserve_list on">
+                
+                <li>
+                    <span>1회차</span>
+                    <p>10:00 ~ 10:30</p>
+                    <div class="reserveBox_end">
+                        <p>접수마감</p>
+                    </div><!-- viewRE_box -->
+                </li>
+
+                <li>
+                    <span>2회차</span>
+                    <p>11:00 ~ 11:30</p>
+                    <div class="reserveBox_end">
+                        <p>접수마감</p>
+                    </div><!-- viewRE_box -->
+                </li>
+
+                <li>
+                    <span>3회차</span>
+                    <p>12:00 ~ 12:30</p>
+                    <div class="reserveBox_ok">
+                        <p>접수가능</p>
+                        <span>잔여 10명</span>
+                        <a href="#none">예약하러가기 ></a>
+                    </div><!-- viewRE_box -->
+                </li>
+                
+                <li>
+                    <span>4회차</span>
+                    <p>13:00 ~ 13:30</p>
+                    <div class="reserveBox_ok">
+                        <p>접수가능</p>
+                        <span>잔여 15명</span>
+                        <a href="#none">예약하러가기 ></a>
+                    </div><!-- viewRE_box -->
+                </li>
+
+                
+                <li>
+                    <span>5회차</span>
+                    <p>14:00 ~ 14:30</p>
+                    <div class="reserveBox_end">
+                        <p>접수마감</p>
+                    </div><!-- viewRE_box -->
+                </li>
+                
+                <li>
+                    <span>6회차</span>
+                    <p>15:00 ~ 15:30</p>
+                    <div class="reserveBox_end">
+                        <p>접수마감</p>
+                    </div><!-- viewRE_box -->
+                </li>
+            </ul><!-- reserve_list END -->
+
+        </div><!-- reserve_box END-->
+        </div><!-- view_content END -->
+    </div><!-- res_group -->
+
+</div><!-- reservation END -->
 
 
+<section class="section01">
+
+    <div class="cont01 flex_b">
+        <!-- 활동사진 영역 -->
+        <div class="photo">
+            <div class="P_tit flex_b">
+                <span>활동사진</span>
+                <span><a href="#none"><i class="fa-solid fa-plus"></i></a></span>
+            </div><!-- P_tit -->
+
+        <div class="P_img">
+            <ul class="P_img_list">
+                <li>
+                    <div class="img_box">
+                        <img src="img/photo_img01.jpg" alt="photo_img01">
+                        <p>어린이 박물관 체험</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_box">
+                        <img src="img/photo_img02.jpg" alt="photo_img02">
+                        <p>어린이 박물관 체험</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_box">
+                        <img src="img/photo_img03.jpg" alt="photo_img03">
+                        <p>어린이 박물관 체험</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_box">
+                        <img src="img/photo_img04.jpg" alt="photo_img04">
+                        <p>어린이 박물관 체험</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_box">
+                        <img src="img/photo_img05.jpg" alt="photo_img05">
+                        <p>어린이 박물관 체험</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_box">
+                        <img src="img/photo_img06.jpg" alt="photo_img06">
+                        <p>어린이 박물관 체험</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_box">
+                        <img src="img/photo_img07.jpg" alt="photo_img07">
+                        <p>어린이 박물관 체험</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img_box">
+                        <img src="img/photo_img08.jpg" alt="photo_img08">
+                        <p>어린이 박물관 체험</p>
+                    </div>
+                </li>
+            </ul><!-- P_img_list -->
+
+        <div class="num_box">
+            <span class="current_num"> 1 </span><!-- current_num -->
+            <span class="total_num"> / 8</span><!-- total_num -->
+        </div><!-- num_box -->
+        </div><!-- P_img -->
+
+        </div><!-- photo -->
+
+
+
+        <!-- 관람안내 영역 -->
+        <div class="date">
+
+        </div><!-- date -->
+    </div><!-- cont01 -->
+
+
+    
+</section><!-- section01 -->
 
 
 </body>

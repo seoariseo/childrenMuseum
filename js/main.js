@@ -40,10 +40,33 @@ $(function () {
     }) //$(".close_btn").click
 
 
-    $(".view_reserve").slick({
-        autopaly :true,
-        
+    //슬릭
+    $(".reserve_list").slick({
+        autoplay :false,
+        arrows:true,
+        dots: false,
+        slidesToShow: 4,
+        infinite: false  
+    })//slick
 
-    })
+    $(".titName li").click(function(){
+        $(".titName li").removeClass("on");
+        $(this).addClass("on");
+        var n = $(this).index();
+        // $(".res_group > div").removeClass("on");
+        // $(".res_group > div").eq(n).addClass("on")
+
+        $(".res_group > div").hide();
+        $(".res_group > div").eq(n).show();
+    })//click
+
+
+    $(".P_img_list").slick({});
+
+    $('.P_img_list').on('afterChange', function(event, slick, currentSlide){
+        $(".current_num").text(currentSlide + 1);
+    });
+
+
 }) //jquery
 

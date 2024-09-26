@@ -28,13 +28,14 @@ body{font-family: 'TTHakgyoansimUndongjangL'; color: #333;}
 /* 예약버튼 */
 .titName{width: 200px; height: 250px; background:var(--orange); font-size: 2rem;
     text-align: center; border-radius: 40px 0 0 40px;}
-.titName li{height: 125px; line-height: 125px;background: var(--yellow); cursor: pointer;}
-.titName li:first-child{border-radius: 40px 0 40px 0;}
-.titName li:last-child{border-radius: 0 40px 0 40px;} 
+.titName li{height: 125px; line-height: 125px;background: var(--yellow); cursor: pointer; 
+    color: #444;}
+.titName li:first-child{border-radius: 40px 0 40px 0; box-shadow: inset -3px -3px 5px #c3811e;}
+.titName li:last-child{border-radius: 0 40px 0 40px; box-shadow: inset -3px 3px 5px #c3811e } 
 
 
 /* 예약창 ON 클래스 */
-.titName li.on{background-color: transparent;}
+.titName li.on{background-color: transparent; box-shadow: none; font-weight: bold; color: #333;}
 /* END */
 
 /* 관람예약 영역*/
@@ -86,13 +87,6 @@ height: 100%;}
 .reserveBox_ok span{font-size: 1.5rem;}
 .reserveBox_ok a{font-size: 1.2rem;}
 .reserveBox_ok a:hover{text-decoration: underline;}
-
-
-
-
-
-
-
 
 /* 예약창 영역 END */
 
