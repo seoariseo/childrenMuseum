@@ -1,0 +1,30 @@
+
+
+@media screen and (max-width : 1660px) {
+.title{margin-left: 5%;}
+}
+
+@media screen and (max-width : 1540px) {
+.title{margin-left: 4%;}
+.cont01{width: 100%;}
+.cont2{width: 85%;}
+}
+
+
+/* 아이패드 1024 사이즈 */
+@media screen and (max-width : 1024px){
+/* 헤더메뉴 */
+.h_top_nav{width: 10%;  }
+.h_top_menu li{display: none;}
+.h_top_menu li:last-child{display: block;}
+.menu_bar i{font-size: 3rem;}
+.head_top {border-bottom: none}
+
+.logo_txt{width: 50%;}
+
+.logo a img {display: none;}
+}
+
+
+
+@media screen and (max-width : 430px){}

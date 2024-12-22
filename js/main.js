@@ -60,13 +60,38 @@ $(function () {
         $(".res_group > div").eq(n).show();
     })//click
 
-
-    $(".P_img_list").slick({});
-
+    //슬릭
+    $(".P_img_list").slick({autoplay:true});
     $('.P_img_list').on('afterChange', function(event, slick, currentSlide){
         $(".current_num").text(currentSlide + 1);
     });
+        
+    //슬릭
+        $(".N_box2_list").slick({})//slick
+        $('.N_box2_list').on('afterChange', function(event, slick, currentSlide){
+            $(".current_num02").text(currentSlide + 1);
+        });
 
+    //슬릭
+        $(".N_box3_list").slick({})//slick
+        $('.N_box3_list').on('afterChange', function(event, slick, currentSlide){
+            $(".current_num03").text(currentSlide + 1);
+        });
+        
+        //구름 스크롤 애니메이션
+        $(window).scroll(function(){
+            let top = $(window).scrollTop();
+            // console.log("scrollTop :" , top) 2100
+            if(top >= 2400){
+                $(".W_cloud_img01").css({"left" : "-420px"})
+                $(".W_cloud_img02").css({"right" : "-400px"})
+                $(".W_cloud_img03").css({"right" : "-340px"})
+            }else{
+                $(".W_cloud_img01").css({"left" : "-800px"})
+                $(".W_cloud_img02 , .W_cloud_img03 ").css({"right" : "-800px"})
+            }
+        })//
 
-}) //jquery
-
+       
+        
+    }) //jquery

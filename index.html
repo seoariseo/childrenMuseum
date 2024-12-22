@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/total.css">
-    <link rel="stylesheet" href="css/slick.css">
     <link rel="shortcut icon" href="img/favicon.ico">
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/main.js"></script>
@@ -106,8 +105,8 @@
                         </li>
                         <li><a href="#none">소개</a>
                             <ul class="down_sub_menu">
-                                <li><a href="#none">어린이박물관 소개</a></li>
-                                <li><a href="#none">박물관상징 소개 </a></li>
+                                <li><a href="#none">어린이박물관</a></li>
+                                <li><a href="#none">박물관상징</a></li>
                             </ul><!-- down_sub_menu -->
                         </li>
                         <li><a href="#none">커뮤니티</a>
@@ -141,6 +140,13 @@
                     <p onclick="alert('검색어를 다시 입력해주세요')">검색</p>
                 </a>
             </div><!-- input_content -->
+            <ul class="tag_list flex_b">
+                <li><a href="#none">#예약현황</a></li>
+                <li><a href="#none">#단체예약</a></li>
+                <li><a href="#none">#예약조회</a></li>
+                <li><a href="#none">#오늘의교육</a></li>
+                <li><a href="#none">#관람시간</a></li>
+            </ul><!-- tag_list -->
         </div><!-- search_box_inner -->
     </div><!-- search_box -->
 
@@ -379,8 +385,8 @@
                     </ul><!-- P_img_list -->
 
                     <div class="num_box">
-                        <span class="current_num">1 &nbsp;</span><!-- current_num -->
-                        <span class="total_num">/ 8</span><!-- total_num -->
+                        <span class="current_num">1</span> &nbsp;/&nbsp;<!-- current_num -->
+                        <span class="total_num">8</span><!-- total_num -->
                     </div><!-- num_box -->
                 </div><!-- P_img -->
 
@@ -420,25 +426,234 @@
                 <div class="N_box01">
                     <ul class="N_boxTxt">
                         <li><a href="#none">[체험] 무럭무럭 문화재 더하기 + '소원성취! 나비팔찌' 체험 안내</a> <span>2024.09</span></li>
+                        <li><a href="#none">[체험] '무럭무럭 문화유산 더하기+' '조물조물 타래 쌓기!' 체험 안내(~9.27.)</a> <span>2024.09</span></li>
+                        <li><a href="#none">[알림] 체험 기기 임시 점검 안내(무늬 따라하기, 배 조종하기/ 8.31.~9.2.)</a> <span>2024.08</span></li>
+                        <li><a href="#none">[체험] 다시 돌아온 '나의 짝꿍, 도자기 무늬 뽑기!' 체험 안내</a> <span>2024.06</span></li>
+                        <li><a href="#none">[체험] 무럭무럭 문화재 더하기 + '도자기 무늬를 담은 핀뱃지' 체험 안내</a> <span>2024.05</span></li>
+                        <li><a href="#none">[알림] 어린이박물관 새단장 후 재개관(2024. 01. 02. 화)</a> <span>2024.01</span></li>
                     </ul><!-- N_boxTxt -->
+                    <img src="img/mole_icon01.png" alt="mole_icon01">
                 </div><!-- N_box01 -->
 
             </div><!-- notice01 -->
 
             <div class="notice02">
+                <div class="notice_tit flex_b">
+                    <span>이달의 전시</span>
+                    <span><a href="#none"><i class="fa-solid fa-plus"></i></a></span>
+                </div><!-- notice_tit -->
 
+                <div class="N_box2">
+                    <ul class="N_box2_list">
+                        <li><img src="img/exhibit(5).jpg" alt="exhibit(1)"></li>
+                        <li><img src="img/exhibit(2).jpg" alt="exhibit(2)"></li>
+                        <li><img src="img/exhibit(3).jpg" alt="exhibit(4)"></li>
+                        <li><img src="img/exhibit(1).jpg" alt="exhibit(5)"></li>
+                        <li><img src="img/exhibit(5).jpg" alt="exhibit(6)"></li>
+                    </ul><!-- N_box_2list -->
+
+                    <div class="N_box2_txt">
+                        <h4> < 십장생, 10가지 이야기 > </h4>
+                        <p>2023-05-25 ~ 현재</p>
+                    </div><!-- N_box2_txt -->
+
+                    <div class="num_box02">
+                        <span class="current_num02">1</span> &nbsp;/&nbsp;<!-- current_num -->
+                        <span class="total_num02">5</span><!-- total_num -->
+                    </div><!-- num_box -->
+                </div><!-- N_box2 -->
+
+                <img src="img/mole_icon02.png" alt="mole_icon02">
             </div><!-- notice02 -->
 
             <div class="notice03">
+                <div class="notice_tit flex_b">
+                    <span>오늘의 교육</span>
+                    <span><a href="#none"><i class="fa-solid fa-plus"></i></a></span>
+                </div><!-- notice_tit -->
 
+                <div class="N_box3">
+                    <ul class="N_box3_list">
+                        <li><img src="img/today(1).jpg" alt="today(1)">
+                            <div class="N_box3_txt">
+                                <p> < 조물조물 꿈을 빚는 도자기 > </p>
+                                <span> · 교육기간 2024-03-04 ~ 2024-11-05 </span>
+                                <span> · 접수기간 2024-03-02 ~ 2024-11-04 </span>
+                            </div><!-- N_box3_txt -->
+                        </li>
+                        <li><img src="img/today(2).jpg" alt="today(2)">
+                            <div class="N_box3_txt">
+                                <p> < 조물조물 꿈을 빚는 도자기 > </p>
+                                <span> · 교육기간 2024-03-04 ~ 2024-11-05 </span>
+                                <span> · 접수기간 2024-03-02 ~ 2024-11-04 </span>
+                            </div><!-- N_box3_txt -->
+                        </li>
+                        <li><img src="img/today(4).jpg" alt="today(4)">
+                            <div class="N_box3_txt">
+                                <p> < 조물조물 꿈을 빚는 도자기 > </p>
+                                <span> · 교육기간 2024-03-04 ~ 2024-11-05 </span>
+                                <span> · 접수기간 2024-03-02 ~ 2024-11-04 </span>
+                            </div><!-- N_box3_txt -->
+                        </li>
+                        <li><img src="img/today(6).jpg" alt="today(6)">
+                            <div class="N_box3_txt">
+                                <p> < 조물조물 꿈을 빚는 도자기 > </p>
+                                <span> · 교육기간 2024-03-04 ~ 2024-11-05 </span>
+                                <span> · 접수기간 2024-03-02 ~ 2024-11-04 </span>
+                            </div><!-- N_box3_txt -->
+                        </li>
+                        <li><img src="img/today(5).jpg" alt="today(5)">
+                            <div class="N_box3_txt">
+                                <p> < 빛 그림 읽어주는 박물관 > </p>
+                                <span> · 교육기간 2024-05-10 ~ 2024-12-05 </span>
+                                <span> · 접수기간 2024-05-09 ~ 2024-12-04 </span>
+                            </div><!-- N_box3_txt -->
+                        </li>
+                        <li><img src="img/today(8).jpg" alt="today(8)">
+                            <div class="N_box3_txt">
+                                <p> < 빛 그림 읽어주는 박물관  > </p>
+                                <span> · 교육기간 2024-05-10 ~ 2024-12-05 </span>
+                                <span> · 접수기간 2024-05-09 ~ 2024-12-04 </span>
+                            </div><!-- N_box3_txt -->
+                        </li>
+                        <li><img src="img/today(7).jpg" alt="today(7)">
+                            <div class="N_box3_txt">
+                                <p> < 창작 놀이터 > </p>
+                                <span> · 교육기간 2024-07-04 ~ 2024-12-25 </span>
+                                <span> · 접수기간 2024-07-03 ~ 2024-12-24 </span>
+                            </div><!-- N_box3_txt -->
+                        </li>
+                    </ul><!-- N_box_2list -->
+
+                    <div class="num_box03">
+                        <span class="current_num03">1</span> &nbsp;/&nbsp;<!-- current_num -->
+                        <span class="total_num03">7</span><!-- total_num -->
+                    </div><!-- num_box -->
+
+                    <img src="img/mole_icon03.png" alt="mole_icon03">
+                </div><!-- N_box3 -->
             </div><!-- notice03 -->
 
+        </div><!-- cont2 END-->
+    </section><!-- section01 END -->
+    
+    
+    <section class="section02">
 
-        </div><!-- cont2 -->
+        <div class="container01">
+            <div class="map">
+                <img src="img/mole_map.png" alt="map">
+                <div class="map_icon">
+                    <ul>
+                        <li class="one"><a href="#none">화장실</a></li>
+                        <li class="two"><a href="#none">데굴데굴<br>놀이터</a></li>
+                        <li class="three"><a href="#none">아하! 나무</a></li>
+                        <li class="four"><a href="#none">쑥쑥<br>배움터</a></li>
+                        <li class="five"><a href="#none">뚝딱<br>배움터</a></li>
+                        <li class="six"><a href="#none">새롭게 관찰해요</a></li>
+                        <li class="seven"><a href="#none">다르게 생각해요</a></li>
+                        <li class="eight"><a href="#none">마음을 나눠요</a></li>
+                        <li class="nine"><a href="#none"><span>어린이 박물관 특별전</span><br>'십장생, 열 가지 이야기'</a></li>
+                        <li class="ten"><a href="#none">시간여행<br>안내소</a></li>
+                        <li class="eleven"><a href="#none">마음보관소</a></li>
+                    </a></li>
+                </ul>
+            </div><!-- map_icon -->
+            <div class="twelve">
+                <p>지도를 보고<br>구석구석 찾아봐!</p>
+                <span>어린이들이 우리의 역사 · 문화를<br>
+                바탕으로 한 다양한 체험과 놀이를<br>할 수 있는 공간이에요.</span>
+            </div><!-- twelve -->
+    
+            </div><!-- map -->
+        </div><!-- container01 -->
 
+        <div class="container02">
 
+            <ul class="wave_cloud_BOX">
+                <li class="W_cloud_img01"></li><!-- cloud01 -->
+                <li class="W_cloud_img02"></li><!-- cloud02 -->
+                <li class="W_cloud_img03"></li><!-- cloud03 -->
+            </ul><!-- wave_cloud -->
 
-    </section><!-- section01 -->
+            <ul class="tree_BOX">
+                <li class="left_tree"></li><!-- left_tree -->
+                <li class="right_tree"></li><!-- right_tree -->
+
+                <li class="communication">
+                    <!-- w1500 h490 -->
+                     <ul class="Co_txt flex_b">
+                         <li><a href="#none">
+                         <div class="CO_title flex_b"><h3>관람후기 </h3><i class="fa-solid fa-plus"></i></div><!-- CO_title -->
+                         <ul class="CO_sub_txt">
+                             <li><h2>09 <span>2024.09</span></h2>
+                                 <div class="CO_sub_txt01">
+                                     <h3>감사하게 잘 이용하고 있습니다.</h3> 
+                                     <p>안녕하세요 근처에 살면서 중앙 어린이 박물관을 너무 잘 이용하고 있습니다.</p>
+                                 </div><!-- CO_sub_txt01 -->
+                             </li>
+                             
+                             <li><h2>09 <span>2024.09</span></h2>
+                                 <div class="CO_sub_txt01">
+                                     <h3>어린이날 너무 잘 놀고 왔습니다.</h3> 
+                                         <p>아이들과 어린이날을 맞이해서 어디를 갈까 많이 고민을 하고 정했는데 너무 잘 이용하고 있습니다.</p>
+                                 </div><!-- CO_sub_txt01 -->
+                             </li>
+                         </ul><!-- CO_sub_txt -->
+                         </a></li><!-- 관람후기 -->
+                         
+                         <li><a href="#none">
+                         <div class="CO_title flex_b"><h3>관람후기 </h3><i class="fa-solid fa-plus"></i></div><!-- CO_title -->
+                         <ul class="CO_sub_txt2">
+                             <li><h2 class="search2"></h2>
+                                 <div class="search2_txt">
+                                     <h3>20인 넘는 단체가 예약하고 싶어요.가능한가요?</h3> 
+                                     
+                                 </div><!-- CO_sub_txt01 -->
+                             </li>
+                             
+                             <li><h2 class="search2"></h2>
+                                 <div class="search2_txt">
+                                     <h3>단체예약 시 체험하는 시간을 조정할 수 있나요? </h3>
+                                 </div><!-- CO_sub_txt01 -->
+                             </li>
+                         </ul><!-- CO_sub_txt -->
+                         </a></li><!-- 관람후기 -->
+                         
+                       
+                     </ul><!-- Co_txt -->
+
+                </li><!-- communication -->
+            </ul><!-- tree_BOX -->
+
+        
+        <!-- footer 영역 -->
+            <div class="footer">
+                <ul class="Fimg_Box">
+                    <li class="stone_img02"><img src="img/stone02.png" alt="stone02"></li>
+                    <li class="wave_img01"><img src="img/wave01.png" alt="wave01"></li><!-- wave_img01 -->
+                    <li class="wave_img02"><img src="img/wave02_02.png" alt="wave02"></li><!-- wave_img02 -->
+                    <li class="stone_img01"><img src="img/stone01.png" alt="stone01"></li>
+                    <li class="f_content">
+                        <ul class="f_content_sub flex_b">
+                            <li><a href="#none"><b>개인정보처리방침</b></a></li>
+                            <li> <a href="#none">이메일집단수집거부</a></li>
+                            <li><a href="#none">본인확인서비스</a></li>
+                            <li><a href="#none">오시는길</a></li>
+                            <li><a href="#none">사이트맵</a></li>
+                        </ul><!-- f_content_sub -->
+                    </li><!-- f_content -->
+                    <li class="Copyright"><p>04383 서울특별시 용산구 서빙고로 137(용산동6가 168-6)&nbsp;&nbsp;대표전화 : 02-2077-9647~9648
+                        <span>COPYRIGHT(C) NATIONAL MUSEUM OF KOREA. ALL RIGHTS RESERVED.</span> </p></li>
+                </ul><!-- Fimg_Box -->
+                
+        </div><!-- footer -->
+        <!-- footer 영역 END -->
+
+        </div><!-- container02 END -->
+        
+    </section><!-- section02 END -->
+
 
 
 </body>

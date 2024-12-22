@@ -9,7 +9,7 @@ a{text-decoration: none; color: inherit; display: block;}
 ul,li{list-style: none;}
 html,body{height: 100%;}
 html{font-size: 10px;}
-body{font-family: 'TTHakgyoansimUndongjangL'; color: #333;}
+body{font-family: 'TTHakgyoansimUndongjangL'; color: #333; overflow-x: hidden;}
 .flex_b{display: flex; justify-content: space-between;}
 .flex_a{display: flex; justify-content: space-around;}
 .flex_c{display: flex; justify-content: center;}
