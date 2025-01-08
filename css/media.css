@@ -1,11 +1,14 @@
 
 
-@media screen and (max-width : 1660px) {
-.title{margin-left: 5%;}
+@media screen and (max-width : 1640px) {
+.title h2{font-size: 2rem;}
+.title h2 span{font-size: 1.3rem; width:110px; }
+.titName{}
+.view_content{font-size: 1.7rem;}
 }
 
 @media screen and (max-width : 1540px) {
-.title{margin-left: 4%;}
+
 .cont01{width: 100%;}
 .cont2{width: 85%;}
 }
@@ -14,11 +17,16 @@
 /* 아이패드 1024 사이즈 */
 @media screen and (max-width : 1024px){
 /* 헤더메뉴 */
-.h_top_nav{width: 10%;  }
+.header{height: 100px;}
+
+.h_top_nav{width: 8%; margin-top: 15px; }
 .h_top_menu li{display: none;}
 .h_top_menu li:last-child{display: block;}
 .menu_bar i{font-size: 3rem;}
 .head_top {border-bottom: none}
+
+.head_inner02{height: 85%; margin-top: -68px; transition: all 0.1s;}
+.h_down_nav{display: none;}
 
 .logo_txt{width: 50%;}
 
