@@ -31,7 +31,48 @@
 .logo_txt{width: 50%;}
 
 .logo a img {display: none;}
+
+/* 배경 */
+.sun{}
+@keyframes sun_move {
+    0%{top: 350px;}
+    50%{top: 450px;}
+    100%{top: 350px;}
 }
+.hill{top: 56%;}
+.mole01{top: 42%;}
+
+/* 예약창 */
+.reservation{width: 100%; transition: all 0.2s; top: 80%;}
+.reserve_list{width: 72%;   margin-top: 0px; margin-left: 30px; height: auto; padding: 0 0;}
+.reserve_list li{height: 220px; }
+.reserve_list .slick-slide{margin-right: 20px;}
+.reserve_list li > div {width: 130px;  border-radius: 22px;  }
+
+.title{ margin-left: -3%;}
+
+/* 예약창 슬릭 */
+.reserve_list .slick-slide{ width: 220px; margin: 0 14px; }
+.reserve_list .slick-arrow.slick-prev{ left: -12%;  background: url(../img/button.png) no-repeat right ; }
+.reserve_list .slick-arrow.slick-next{ right: -6%; background: url(../img/button.png) no-repeat ;}
+
+/* 활동사진 영역 */
+.section01{margin-top: 0px; padding-top: 160px; }
+.cont01{height: auto; flex-wrap: wrap;}
+.cont01 > div{margin: 0 auto; width: 90%;}
+.cont01:first-child::after{content: none;}
+.cont_tit{width: 90%; margin: 0 auto;}
+/* 활동사진 슬라이드 */
+.P_img{width: 90%; margin: 40px auto 0;}
+.P_img_list li{height: 380px;}
+.num_box{margin-top: 40px;}
+.P_img_list .slick-arrow{bottom: -62px;}
+
+/* 관람안내 영역 */
+.museum_date img{width: 65%; margin: 40px auto; border: 1px solid red; }
+.museum_date ul li{margin: 0 0 20px 17%; border: 1px solid red; width: 70%; font-size: 1.9vw;}
+}/* 아이패드 End */
+
 
 
 
