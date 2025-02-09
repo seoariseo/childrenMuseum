@@ -45,9 +45,28 @@ $(function () {
         autoplay :false,
         arrows:true,
         dots: false,
-        slidesToShow: 4,
-        infinite: false  
+        slidesToShow: 3,
+        infinite: false,
+        variableWidth : true,
+        responsive: [ // 반응형 웹 구현 옵션
+            {  
+                breakpoint: 1024, //화면 사이즈 960px
+                settings: {
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow:2 
+                } 
+            },
+            { 
+                breakpoint: 768, //화면 사이즈 768px
+                settings: {	
+                    //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                    slidesToShow:2 
+                } 
+            }
+        ]  
+        
     })//slick
+
 
     $(".titName li").click(function(){
         $(".titName li").removeClass("on");
