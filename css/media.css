@@ -52,6 +52,7 @@
 .title{ margin-left: -3%;}
 
 /* 예약창 슬릭 */
+.title{padding: 10px 0 10px 35px; width: 180px; }
 .reserve_list .slick-slide{ width: 220px; margin: 0 18px; }
 .reserve_list .slick-arrow.slick-prev{ left: -12%;  background: url(../img/button.png) no-repeat right ; }
 .reserve_list .slick-arrow.slick-next{ right: -6%; background: url(../img/button.png) no-repeat ;}
@@ -69,8 +70,8 @@
 .P_img_list .slick-arrow{bottom: -62px;}
 
 /* 관람안내 영역 */
-.museum_date img{width: 65%; margin: 40px auto; border: 1px solid red; }
-.museum_date ul li{margin: 0 0 20px 17%; border: 1px solid red; width: 70%; font-size: 1.9vw;}
+.museum_date img{width: 65%; margin: 40px auto;}
+.museum_date ul li{margin: 0 0 20px 17%; width: 70%; font-size: 1.9vw;}
 
 
 /* .cont2영역 알립니다/이달의전시/오늘의교육 */
@@ -102,15 +103,47 @@
 
 /* 지도영역 */
 .map{display: none;}
-.container01{border: 1px solid orange; padding: 80px 0; height: auto;}
+.container01{height: auto;}
 
-.map2{border: 1px solid red; height: 650px;}
+.map2{background: #FFFEDB; height: 800px;}
 
+.map2_text{font-size: 1.6rem; text-align: center; padding: 60px 0 40px;}
+.map2_text > p{margin-top: 30px;}
 
+.map_icon_wrap{flex-wrap: wrap; padding: 40px 40px; height: 70%; position: relative; ;}
+.map_icon_wrap li{ background: #83df62; width: 270px; height: 200px; text-align: center; padding: 15px;
+     border-radius: 40px; }
+.map_icon_wrap li h2{font-size: 1.8rem; margin: 20px 0 15px;} 
+.map_icon_wrap li p{font-size: 1.2rem; line-height: 1.5; height: 40px;} 
+.map_icon_wrap li .plus_icon{background-color: #fff; box-shadow: 1px 1px 5px #52ab32; width: 50px; height: 50px; display: block; border-radius: 50%; margin: 20px auto 0;  } 
+.map_icon_wrap li .plus_icon:hover{background-color: #FBFF06;}
+.map_icon_wrap li .plus_icon i{font-size: 2rem; line-height: 50px;}
 
+.map2_icon img{width: 10%; height: 100px; position: absolute;}
+.map2_icon .mole_1 img{top: 72%; left: 3%;}
+.map2_icon .mole_2 img{top: 42%; right: 2%;}
 
+.more_btn{font-size: 1.4rem; text-align: center;}
+.more_btn a:hover{text-decoration: underline;}
 
+/* container02 관람후기 영역 */
+.container02{margin-top: 0; height: 100%; background: none;}
+.wave_cloud_BOX {display: none;}
 
+.tree_BOX{background-size: 50%;}
+.left_tree{display: none;}
+.right_tree{display: none;}
+
+.communication{ margin-top: 100px; width: 100%; background: none; border-radius: 0;}
+
+.footer{margin-top: 0; border: 1px solid red; height: 560px;}
+/* 바위 이미지영역 */
+.Fimg_Box .stone_img01{left: 40%; top: 10%;}
+.Fimg_Box .stone_img02{left: 10%; top: 10%;}
+.Fimg_Box .f_content{top: 54%; width: 90%;}
+.f_content .f_content_sub{font-size: 1.4rem; margin: 0 50px;} 
+
+.Copyright{font-size: 0.8rem; width: 100%; line-height: 1.5;}
 }/* --------- 아이패드 End */
 
 
