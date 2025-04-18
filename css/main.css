@@ -105,7 +105,7 @@
 
 
 /* h_down_menu 영역 */
-.h_down_nav{width: 50%; border: 1px solid blue;}
+.h_down_nav{width: 50%;}
 
 .h_down_menu {}
 .h_down_menu > li {position: relative; width: 100%;}
@@ -181,16 +181,16 @@ padding: 10px; line-height: 80px; color: #fff; border-radius: 0 20px 20px 0;}
 
 
 /* 예약창 영역 ---- */
-.reservation{max-width: 95%;  width: 80%; height: 280px; position: absolute; z-index: 10;
+.reservation{max-width: 95%;  width: 80%; height: 280px; position: absolute; z-index: 200;
     top: 95%; left: 50%; transform: translateX(-50%); border-radius: 40px;  box-shadow: 20px 8px 5px #0000002d;}
 
 /* 예약버튼 */
-.titName{width: 15.2%; height: 100%; background:var(--orange); font-size: 2rem; z-index: 100;
+.titName{width: 15.2%; height: 100%; background:var(--orange); font-size: 2rem; 
     text-align: center; border-radius: 40px 0 0 40px;} 
 .titName li{width: 100%; height: 140px; line-height: 140px; background: var(--yellow); cursor: pointer; 
     color: #444;}
 .titName li:first-child{border-radius: 40px 0 40px 0; box-shadow: inset -3px -3px 5px #c3811e;}
-.titName li:last-child{border-radius: 0 40px 0 40px; box-shadow: inset -3px 3px 5px #c3811e } 
+.titName li:last-child{border-radius: 0 40px 0 40px; box-shadow: inset -3px 3px 5px #c3811e; } 
 
 
 /* 예약창 ON 클래스 */
@@ -198,31 +198,33 @@ padding: 10px; line-height: 80px; color: #fff; border-radius: 0 20px 20px 0;}
 /* END */
 
 /* 예약그룹 */
-.res_group{ position: absolute; top: 0; left: 2%; width: 85%; }
+.res_group{ position: relative; width: 85%; }
 
 /* 관람예약 영역*/
-.view_content{font-size: 1.8rem; width: 100%; height: 100%; cursor: pointer; z-index: 200; }
+.view_content{position: absolute; font-size: 1.8rem; width: 100%; height: 100%; cursor: pointer; z-index: 20;}
 
 /* 교육예약 영역 */
-.education_content{ z-index: 50;}
+.res_group .education_content{z-index: 10;}
 
 
 /* 예약 박스 */
-.reserve_box{position: absolute; top: 0; left: 15.3%; z-index: 20; width: 100%; height: 280px;
-    align-items: center; background-color: #f79d00; border-radius: 0 40px 40px 0; padding: 0 50px;}
+.reserve_box{width: 100%; height: 280px; 
+    align-items: center; background-color: #f79d00; border-radius: 0 40px 40px 0; padding: 0 50px; }
 
 /* 예약확인 타이틀 */
 .title{width: 150px; height: auto; padding: 10px 10px;
     text-align: left; }
 .title h2{line-height: 1.2; font-weight: 500; font-size: 2.2rem;}
-.title h2 span{font-size: 1.4rem; display: block; width:120px; margin-top: 10px; padding-top: 10px;
-        border-top: 1px solid black;  text-align: left; }
+.title h2 span{font-size: 1.4rem; display: block; width:120px; margin-top: 10px; padding-top: 10px; border-top: 1px solid black;  text-align: left; }
     
 /* 예약 리스트 */
 .reserve_list{width: 80%; position: relative;}
-.reserve_list li{ background-color: var(--yellow); width: 200px; height: 220px; text-align: center;
-    line-height: 20px; border-radius: 30px; padding: 20px 0;}
+
+.reserve_list li{ background-color: var(--yellow); width: 200px; height: 220px;
+text-align: center; line-height: 20px; border-radius: 30px; padding: 20px 0;}
+
 .reserve_list li > span{ display: block; margin-bottom: 10px;}
+
 .reserve_list li > p{font-size: 1.4rem;}
 
 
@@ -313,7 +315,7 @@ padding: 10px; line-height: 80px; color: #fff; border-radius: 0 20px 20px 0;}
 .notice_tit{height: 100px; padding: 50px 40px 0px; font-size: 2.6rem;}
 .N_box01{width: 100%; height: 460px; /* border: 1px solid blue; */ font-size: 1.7rem;}
 
-.N_boxTxt{width: 100%; padding: 40px 40px; position: relative;}
+.N_boxTxt{width: 80%; padding: 40px 40px; position: relative;}
 .N_boxTxt li{display: flex;  justify-content: space-between; margin-bottom: 40px;}
 .N_boxTxt li a{width: 70%; text-wrap: nowrap; text-overflow: ellipsis; overflow: hidden; }
 .N_boxTxt li a:hover{text-decoration: underline;}
@@ -440,8 +442,8 @@ padding: 10px; line-height: 80px; color: #fff; border-radius: 0 20px 20px 0;}
 .map_icon ul li:last-child:hover > a{text-shadow: 2px 2px 10px #222; transform: scale(1.1,1.1) rotate(15deg) ;}
 
 .twelve{text-align: justify; top: 37%; left: 69%; position: absolute; color: #fff;}
-.twelve p{font-size: 2.6rem; line-height: 1.2; }
-.twelve span{ font-size: 1.8rem; display: block; margin-top:15px; line-height: 1.6;}
+.twelve p{font-size: 1.5vw; line-height: 1.2;}
+.twelve span{ font-size: 1vw; display: block; margin-top:15px; line-height: 1.6;}
 
 .map2{display: none;}
 /* 지도영역 END */
@@ -465,8 +467,7 @@ padding: 10px; line-height: 80px; color: #fff; border-radius: 0 20px 20px 0;}
 .right_tree{background-image: url(../img/right_tree.png); position: absolute; right: -35%;  width: 820px; height: 840px;}
 
 /* 커뮤니케이션 영역 */
-.communication{max-width: 1500px; width: 80%; margin: 0 auto; box-shadow: 2px 3px 5px #d1d1d136; 
-    padding: 40px; border-radius: 40px; background-color: #ffffff50;} 
+.communication{max-width: 1500px; width: 80%; margin: 0 auto; box-shadow: 2px 3px 5px #d1d1d136; padding: 40px; border-radius: 40px; background-color: #ffffff50;} 
 .communication .Co_txt{font-size: 1.6rem; height: 100%;}
 .communication .Co_txt > li {/*  border: 1px solid red;  */width: 49%; padding: 20px;}
 .communication .Co_txt > li > a{}
@@ -476,22 +477,21 @@ padding: 10px; line-height: 80px; color: #fff; border-radius: 0 20px 20px 0;}
 .communication .Co_txt li a .CO_title h3{font-size: 2.4rem;  padding-bottom: 10px;}
 .communication .Co_txt li a .CO_title i{font-size: 2.4rem;}
 
-.communication .Co_txt li .CO_sub_txt{padding-right: 10px; /* border: 1px solid blue; */}
+.communication .Co_txt li .CO_sub_txt{}
 .communication .Co_txt li .CO_sub_txt > li{display: flex; justify-content: space-between; align-items: center; 
-     width: 100%; border-bottom: 1px solid #c1c1c1;  padding: 10px 0;}
-.communication .Co_txt li .CO_sub_txt > li > h2{text-align: center; width: 16%; height: 100%;  padding: 12px; font-size: 1.8vw;/*  border: 1px solid black; */}
-.communication .Co_txt li .CO_sub_txt > li > h2 >span{font-size: 50%; display: block; margin: 10px auto 0;}
+     width: 100%;   height: 120px; border-bottom: 1px solid #c1c1c1; }
+.communication .Co_txt li .CO_sub_txt > li > h2{text-align: center; width: 16%;/*  padding: 12px; */ font-size: 3rem;/*  border: 1px solid black; */}
+.communication .Co_txt li .CO_sub_txt > li > h2 > span{font-size: 0.9vw; display: block; margin: 5px auto 0; width: 100%;}
 
-.CO_sub_txt01{ line-height: 1.5; width: 84%; padding: 10px;}
-.CO_sub_txt01 > h3{}
+.CO_sub_txt01{ line-height: 1.5; width: 85%; padding: 10px;/*  border: 1px solid red; */}
 .CO_sub_txt01 > p{width: 100%; text-overflow: ellipsis; overflow: hidden; text-wrap: nowrap;}
 
-.communication .Co_txt li .CO_sub_txt2{/* border: 1px solid blue; */ padding-right: 10px;}
+.communication .Co_txt li .CO_sub_txt2{/* border: 1px solid blue; */ padding-right: 10px; font-size: 1.6rem;}
 .communication .Co_txt li .CO_sub_txt2 > li{display: flex; justify-content: space-between; align-items: center; 
-    width: 100%; border-bottom: 1px solid #c1c1c1;  padding: 10px 0;}
-.communication .Co_txt li .CO_sub_txt2 > li > h2{text-align: center; width: 15%; height: 80px;
-    background: url(../img/search2.png) no-repeat center center / 70%; padding: 14px;}
-.communication .Co_txt li .CO_sub_txt2 > li > .search2_txt{ width: 85%;}
+    width: 100%; border-bottom: 1px solid #c1c1c1;  padding: 10px 0;  height: 120px;}
+.communication .Co_txt li .CO_sub_txt2 > li > h2{text-align: center; width: 70px; height: 80px;
+    background: url(../img/search2.png) no-repeat center center / 70%;/*  padding: 14px; */ /* border: 1px solid orange; */}
+.communication .Co_txt li .CO_sub_txt2 > li > .search2_txt{ width: 85%; /* border: 1px solid red; */}
 
 
 /* footer 영역 */
@@ -524,7 +524,7 @@ padding: 10px; line-height: 80px; color: #fff; border-radius: 0 20px 20px 0;}
 /* 개인정보처리 영역 */
 .Fimg_Box .f_content{width: 85%; height: 80px; top: 58%; left: 50%; 
     transform: translateX(-50%); box-shadow: 2px 2px 5px #d1d1d16a;
-    background-color: #fff; border-radius: 40px;}
+    background-color: #fff; border-radius: 40px; }
 
 .f_content .f_content_sub{font-size: 1.6rem; margin: 0 200px; align-items: center; height: 100%;}
 .f_content .f_content_sub li{position: relative;}
@@ -537,4 +537,4 @@ padding: 10px; line-height: 80px; color: #fff; border-radius: 0 20px 20px 0;}
 /* 카피라이트영역 */
 .Fimg_Box .Copyright{top: 83%; left: 50%; transform: translateX(-50%); text-align: center; font-size: 1.4rem;}
 .Fimg_Box .Copyright p{color: #fff; }
-.Fimg_Box .Copyright p span{display: block; marg`in-top: 10px;}
+.Fimg_Box .Copyright p span{display: block; margin-top: 10px;}

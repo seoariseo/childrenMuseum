@@ -40,7 +40,7 @@ $(function () {
     }) //$(".close_btn").click
 
 
-    //슬릭
+    //슬릭 - 예약창
     $(".reserve_list").slick({
         autoplay :false,
         arrows:true,
