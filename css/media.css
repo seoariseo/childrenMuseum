@@ -1,14 +1,26 @@
 
 
 @media screen and (max-width : 1640px) {
-.title h2{font-size: 2rem;}
+.reserve_box{padding: 0 50px 0 20px;}
+.title h2{width: 120px;}
 .title h2 span{font-size: 1.3rem; width:110px; }
 .view_content{font-size: 1.7rem;}
+.reserve_list{width: 78%;}
+}
+
+
+@media screen and (max-width : 1600px) {
+.left_tree{left: -48%; transition: all 0.5s;}
+.right_tree{right: -48%; transition: all 0.5s;}
+}
+
+@media screen and (max-width : 1535px) {
+.cont2{width: 90%; transition: all 0.5s;}
 }
 
 
 /* -------  아이패드 1024 사이즈 */
-@media screen and (max-width : 1024px){
+@media screen and (max-width : 1250px){
 /* 헤더메뉴 */
 .header{height: 100px;}
 
@@ -53,7 +65,7 @@
 /* 활동사진 영역 */
 .section01{margin-top: 0px; padding-top: 160px; }
 .cont01{height: auto; flex-wrap: wrap;}
-.cont01 > div{margin: 0 auto 20px; width: 90%;}
+.cont01 > div{margin: 0 auto 20px; width: 90%; transition: all 0.5s;}
 .cont01:first-child::after{content: none;}
 .cont_tit{width: 90%; margin: 0 auto;}
 
@@ -66,10 +78,10 @@
 /* 관람안내 영역 */
 
 .cont01 > div{/* width: 100%; */}
-.museum_date img{width: 70%; margin: 50px auto; }
-.museum_date ul li{margin: 0 0 20px 17%; width: 70%; font-size: 2rem;}
-.museum_date ul li h4{ margin-right: 10px;}
-
+.museum_date img{width: 70%; margin: 50px auto;  }
+.museum_date ul li{margin: 0 0 20px 17%; width: 100%;font-size: 2rem;}
+.museum_date ul li h4{ margin-right: 10px; font-size: 1.8rem;}
+.museum_date ul li span{font-size: 1.8rem; }
 /* .cont2영역 알립니다/이달의전시/오늘의교육 */
 .N_box01 img{display: none;}
 .notice02 > img{display: none;}
@@ -82,6 +94,7 @@
 .cont2 .notice01{width: 100%; height: 380px; margin-bottom: 40px;  }
 .cont2 .notice02{width: 48%;height: 540px;}
 .cont2 .notice03{width: 48%;height: 540px;}
+.N_boxTxt{width: 100%;}
 .N_boxTxt li{ margin-bottom: 50px; font-size: 1.6rem;}
 
 /* 이달의전시 */
@@ -101,25 +114,25 @@
 .map{display: none;}
 .container01{height: auto;}
 
-.map2{background: #FFFEDB; height: 800px;}
+.map2{background: #ffffcf72; height: auto; display: block;}
 
 .map2_text{font-size: 1.6rem; text-align: center; padding: 60px 0 40px;}
 .map2_text > p{margin-top: 30px;}
 
-.map_icon_wrap{flex-wrap: wrap; padding: 40px 40px; height: 70%; position: relative; ;}
-.map_icon_wrap li{ background: #83df62; width: 270px; height: 200px; text-align: center; padding: 15px;
-     border-radius: 40px; }
+.map_icon_wrap{flex-wrap: wrap; width: 85%; margin: 0 auto; padding: 40px 40px; height: auto; position: relative;}
+.map_icon_wrap li{ background: #79ae1cb4 linear-gradient( #beff7cc1, #aee54e , #d6f087e0 ); width: 270px; height: 200px; text-align: center; padding: 15px;
+     border-radius: 40px; margin-bottom: 20px;}
 .map_icon_wrap li h2{font-size: 1.8rem; margin: 20px 0 15px;} 
 .map_icon_wrap li p{font-size: 1.2rem; line-height: 1.5; height: 40px;} 
-.map_icon_wrap li .plus_icon{background-color: #fff; box-shadow: 1px 1px 5px #52ab32; width: 50px; height: 50px; display: block; border-radius: 50%; margin: 20px auto 0;  } 
-.map_icon_wrap li .plus_icon:hover{background-color: #FBFF06;}
+.map_icon_wrap li .plus_icon{background-color: #fff; box-shadow: 1px 1px 5px #257309; width: 50px; height: 50px; display: block; border-radius: 50%; margin: 20px auto 0;  } 
+.map_icon_wrap li .plus_icon:hover{background-color: #0c9eff;}
 .map_icon_wrap li .plus_icon i{font-size: 2rem; line-height: 50px;}
 
 .map2_icon img{width: 10%; height: 100px; position: absolute;}
 .map2_icon .mole_1 img{top: 72%; left: 3%;}
 .map2_icon .mole_2 img{top: 42%; right: 2%;}
 
-.more_btn{font-size: 1.4rem; text-align: center;}
+.more_btn{font-size: 1.4rem; text-align: center; background: #ffffcf72; height: 40px; }
 .more_btn a:hover{text-decoration: underline;}
 
 /* container02 관람후기 영역 */
@@ -157,10 +170,17 @@
 
 
 
-/* -------------------- 웹 마지막 사이즈 500px */
-@media screen and (max-width : 520px) {
+/* -------------------- 웹 마지막 사이즈 920px */
+@media screen and (max-width : 920px) {
 .head_inner02 {padding: 6px 25px; height: 100%; }
 .logo_txt{width: 60%;}
+
+
+.reservation{top: 70%;}
+.title h2{font-size: 2rem; width: 200px;}
+.reserve_list li{padding: 20px; height: 140px;}
+.reserve_list .slick-slide{width: 200px; margin: 0 10px;}
+.reserve_list li > span{margin-bottom: 0;}
 
 /* 메인 어린이박물관 로고 */
 .main_Txt{text-align: center; padding-top: 280px;}
@@ -260,6 +280,15 @@ display: inline-block; flex: none; box-shadow: inset -3px -3px 5px #0000002d;}
 .N_box3_list li img{ height: 90%;}
 .N_box3_list .slick-arrow{bottom: -175px;}
 
+/* map2 지도 2번째영역 */
+.map2{height: auto;}
+.map_icon_wrap{}
+.map2_text{margin: 0; padding: 40px 0 0;} 
+.map_icon_wrap li{width: 40%; align-content: center; margin: 0 auto 15px;  }
+.more_btn{height: 50px; }
+.mole_1{display: none;}
+.mole_2{display: none;}
+
 /* 관람후기 & 자주찾는질문 영역 */
 .communication{width: 95%; margin-top: 40px; padding: 0;}
 .Co_txt{width: 100%; flex-wrap: wrap;}
@@ -283,10 +312,27 @@ display: inline-block; flex: none; box-shadow: inset -3px -3px 5px #0000002d;}
 
 .Fimg_Box .Copyright{top: 75%;}
 .Fimg_Box .Copyright p{font-size: 1rem; width: 100%; line-height: 1.5;}
-}/* --------------- 웹 마지막 사이즈 500px End */
+}/* --------------- 웹 마지막 사이즈 920px End */
 
 
 
+/* ---------------- 모바일 670 사이즈  */
+@media screen and (max-width : 670px){
+.map2_text{width: 80%;margin: 0 auto;}
+.map_icon_wrap {padding: 10px;}
+.map_icon_wrap li{width:46%;}
+.map_icon_wrap li p{display: none;}
+
+/* .reservation{top: 70%;}
+.reserve_box{padding: 0;}
+.reserve_list li{padding: 20px; height: 140px;}
+.reserve_list .slick-slide{width: 200px; margin: 0 10px;}
+.reserve_list li > span{margin-bottom: 0;}
+.title{margin-top: 20px;}
+.cont01 { width: 100%;}
+.museum_date ul li h4{font-size: 1.6rem;}
+.museum_date ul li span{font-size: 1.6rem;} */
+}/* ---------------- 모바일 670 사이즈 End */
 
 
 /* ---------------- 모바일 430 사이즈 (아이폰 14 프로맥스) */
