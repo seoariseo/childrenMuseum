@@ -192,7 +192,7 @@
     background-position: center 50px;}
 
 /* 메인 배경화면 애니메이션 */
-.sun{animation: rotation 120s infinite; transition: all 2s; top: 200px; left: 50px; width: 20%; height: 10%;}
+.sun{animation: rotation 120s infinite; transition: all 2s; top: 200px; left: 50px; width: 20%; height: 20%;}
     @keyframes rotation {
         0%{transform: rotate(0deg);}
         100%{transform: rotate(3600deg);}
@@ -335,7 +335,8 @@ display: inline-block; flex: none; box-shadow: inset -3px -3px 5px #0000002d;}
 }/* ---------------- 모바일 670 사이즈 End */
 
 
-/* ---------------- 모바일 430 사이즈 (아이폰 14 프로맥스) */
-@media screen and (max-width : 430px){
-
-}/* ---------------- 모바일 430 사이즈 End */
+/* ---------------- 모바일 560 사이즈 */
+@media screen and (max-width : 560px){
+.sun{display: none;}
+.mole01{display: none;}
+}/* ---------------- 모바일 560 사이즈 End */
